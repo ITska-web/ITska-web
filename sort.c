@@ -4,7 +4,7 @@
 #include <string.h>
 #define N 10
 // Любой комментарий
-// новый комментарий
+// Любой комментарий
 char names[90][64] = {
     "Александр", "Сергей", "Максим", "Дмитрий", "Артем",
     "Егор", "Иван", "Никита", "Михаил", "Тимур",
@@ -136,6 +136,8 @@ void QuickSort(struct Student students[], int low, int high)
 int main()
 {
     srand(time(NULL));
+    int a[] = {1, 2};
+    QuickSort(a);
     struct Student students[N];
     printf("Неотсортированный массив: \n");
     for (int i = 0; i < N; i++)
